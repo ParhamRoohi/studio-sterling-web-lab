@@ -46,5 +46,10 @@ export default defineType({
       title: 'Image',
       type: 'image',
     }),
+    defineField({
+      name: 'seo',
+      title: 'SEO',
+      type: 'seo',
+    }),
   ],
 })
