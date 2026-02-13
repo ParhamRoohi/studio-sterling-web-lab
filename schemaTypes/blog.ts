@@ -27,6 +27,13 @@ export default defineType({
       type: 'text',
     }),
     defineField({
+      name: 'mainContent',
+      title: 'Main Content',
+      type: 'array',
+      of: [{type: 'block'}, {type: 'image'}],
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
       name: 'category',
       title: 'Category',
       type: 'string',
